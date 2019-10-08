@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <style>
+      .list-item{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>About Me</h1>
+
+    <ul>
+      <li>Nickname: <span id="nickname"></span></li>
+      <li>Favorite food: <span id="fav-food"></span></li>
+      <li>Hometown: <span id="hometown"></span></li>
+    </ul>
+  </body>
+  <!-- 1. Add a script tag to the bottom of the HTML body. -->
+  <script type="text/javascript">
+    const body = document.body;
+    //2. (In the JavaScript) Change the body tag's style so it has a font-family of "Arial, sans-serif".
+    body.style.fontFamily = "Arial, sans-serif";
+    // 3. (In the JavaScript) Replace each of the spans (nickname, fav-food, hometown) with your own information.
+    document.getElementById('nickname').textContent = "Havoc";
+    document.getElementById('fav-food').textContent = "Pizza";
+    document.getElementById('hometown').textContent = "Keryneia";
+    // 4. Iterate through each li and change the class to "list-item".
+    const lis = document.querySelectorAll('li');
+    for (let li of lis) {
+      li.classList.add("list-item");
+    }
+    // 5. (In the HTML head) Add a style tag that sets a rule for .list-item to make the color red.
+    // 6. Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+    const image = document.createElement("img");
+    image.setAttribute("src", "https://avatars3.githubusercontent.com/u/38007638?s=460&v=4");
+    body.append(image);
+  </script>
+</html>

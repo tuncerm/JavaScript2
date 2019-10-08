@@ -1,0 +1,46 @@
+.btn{
+  height: 25px;
+  line-height: 25px;
+  padding: 6px;
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+  border-radius: 3px;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn:hover {
+	background-color:#72b352;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+body{
+  background-color: orange;
+  color: orange;
+}
+
+.main{
+  background-color: white;
+  padding: 40px;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.right{
+  float: right;
+}
+.quote-area{
+  overflow: auto;
+}
+.qt{
+  font-family: arial;
+  font-size: 5em;
+  line-height: 0.7em;
+  float: left;
+}
+svg{
+  fill: white;
+}
