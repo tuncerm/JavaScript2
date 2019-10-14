@@ -1,0 +1,65 @@
+body{
+  background-color: #1C4B52;
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 23px;
+  position: relative;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+.btnX{
+  margin-left: 69px;
+}
+.up{
+  top: 15px;
+  border-bottom: 15px solid #FFF;
+}
+.down{
+  bottom: 15px;
+  border-top: 15px solid #FFF;
+}
+.qrbtn{
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 0;
+  height: 0;
+}
+.start{
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 50px solid #FFF;
+}
+.stop{
+  border: 25px solid #FFF;
+}
+.btn-holder{
+  margin-top: 50px;
+  text-align: center;
+}
+.hdr-holder{
+  text-align: center;
+}
+.container{
+  width: 675px;
+  margin: 0 auto;
+}
+.clock{
+  padding: 25px;
+  border: 25px solid #142f33;
+  border-radius: 50px;
+}
+.hdr, .hdm{
+  margin: 0;
+  color: #FFF;
+  font-size: 70px;
+  font-family: monospace;
+}
+.hdm{
+  font-size: 80px;
+}
