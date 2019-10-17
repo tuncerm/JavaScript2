@@ -25,5 +25,5 @@ function add(a, b) {
   return a + b;
 }
 
-const total = mondayTasks.map(calcPrice).reduce(add, 0).toFixed(2);
+const total = mondayTasks.map(calcPrice).reduce(add, 0).toFixed(2) + '€';
 console.log(total);

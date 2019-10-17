@@ -76,11 +76,12 @@ const drawDigit = (canvas, x, num) => {
   }
 }
 
-function changeTime( num ){
+function changeTime(ev){
+  const value = +ev.target.getAttribute('data');
   if (isRunning) {
       return;
   }
-  time += num;
+  time += value;
   if (time < 0) {
     time = 0;
   }
@@ -99,7 +100,7 @@ async function updateCanvas(){
 }
 
 function start(){
-  if (isRunning) {
+  if (isRunning || time === 0) {
     return;
   }
   isRunning = true;
@@ -119,3 +120,6 @@ function stop() {
 }
 
 updateCanvas();
+document.querySelectorAll('.btn').forEach(item => item.addEventListener('click', changeTime, false));
+document.getElementById('btn-start').addEventListener('click', start);
+document.getElementById('btn-stop').addEventListener('click', stop);
