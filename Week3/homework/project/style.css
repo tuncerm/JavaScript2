@@ -1,0 +1,84 @@
+:root{
+  --color-back: #611e13;
+  --color-dark: #1c040b;
+  --color-light: #f7f7f7;
+  --color-btn: #9f273d;
+}
+
+body{
+  background-color: var(--color-back);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#app{
+  width: 360px;
+  margin: 20px auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.header{
+  background-color: var(--color-dark);
+  height: 40px;
+  text-align: center;
+}
+.header-text{
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.body{
+  background-color: white;
+  padding-bottom: 25px;
+}
+.body-questions{
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+form{
+  padding: 10px;
+}
+select{
+  display: block;
+  height: 30px;
+  width: 80%;
+  margin: 5px auto;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn{
+  background-color: var(--color-btn);
+  height: 40px;
+  color: white;
+  border: 1px solid var(--color-btn);
+  border-radius: 5px;
+  line-height: 40px;
+  font-size: 20px;
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+  text-transform: uppercase;
+}
+input[type = 'number']{
+  height: 25px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.result{
+  text-align: center;
+}
+.tip-amount{
+  font-size: 30px;
+}
+.sign{
+  vertical-align: top;
+  font-size: 20px;
+}
